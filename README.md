@@ -1,49 +1,15 @@
-# TG Knowledge Base / Telegram 知识库
+# Telegram 知识库 / TG Knowledge Base
 
-一个牛逼的 Telegram 知识库系统：自动采集、智能分类、全文搜索、向量检索、AI 摘要。
+> 一份关于 Telegram 的全面知识库：客户端、Bot、频道、群组、隐私、开发、技巧。
 
-## ✨ 特性
+## 目录
 
-- 📥 **多源采集**：支持群组/频道/私聊历史消息批量导入
-- 🔍 **全文搜索**：基于 SQLite FTS5 的极速全文检索
-- 🧠 **语义检索**：向量嵌入 + 相似度搜索
-- 🏷️ **智能标签**：自动分类、主题聚类、关键词提取
-- 📝 **AI 摘要**：长文自动摘要、对话总结
-- 📊 **可视化**：活跃度、话题趋势、用户统计
-- 🔐 **隐私优先**：本地存储、可选加密
-- 🌐 **Web UI**：现代化界面，开箱即用
-
-## 🏗️ 架构
-
-```
-tg-kb/
-├── collector/     # Telegram 采集器 (Telethon)
-├── indexer/       # 索引与向量化
-├── search/        # 搜索引擎
-├── ai/            # AI 摘要与分类
-├── api/           # FastAPI 后端
-├── web/           # 前端界面
-├── storage/       # 数据存储层
-└── cli/           # 命令行工具
-```
-
-## 🚀 快速开始
-
-```bash
-# 安装依赖
-pip install -r requirements.txt
-
-# 配置
-cp .env.example .env
-# 填入 API_ID / API_HASH / BOT_TOKEN
-
-# 采集消息
-python -m tgkb collect --chat @channel --limit 10000
-
-# 启动 Web
-python -m tgkb serve
-```
-
-## 📄 License
-
-MIT
+- [01-基础入门](./01-basics.md)
+- [02-客户端与平台](./02-clients.md)
+- [03-Bot 开发](./03-bots.md)
+- [04-频道与群组](./04-channels-groups.md)
+- [05-隐私与安全](./05-privacy-security.md)
+- [06-搜索与发现](./06-search-discovery.md)
+- [07-自动化与工具](./07-automation.md)
+- [08-常见问题](./08-faq.md)
+- [09-资源汇总](./09-resources.md)
